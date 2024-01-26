@@ -110,7 +110,7 @@ def run_youtube_etl():
     print(video_data)
     print(len(video_data)) #to verify all 301 videos got imported
 
-    video_data.to_csv("Fidelity_YT_Video_Data.csv", index = False)
+    video_data.to_csv("s3://bucket_name/Fidelity_YT_Video_Data.csv", index = False)
 
 
     
